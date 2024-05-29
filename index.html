@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Orian Perez, showcasing skills and projects in full-stack development.">
+    <meta name="author" content="Orian Perez">
     <title>Orian Perez Portfolio</title>
 </head>
 <body>
     <header>
         <h1>H1 Title</h1>
         <nav>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
+
+        <!--ABOUT SECTION-->
         <section id="about">
             <h2>About Me</h2>
             <p></p> <!--Añadir aquí la info principal-->
@@ -29,15 +35,43 @@
                 <li>Github</li>
             </ul>
         </section>
+
+        <!--PROJECTS SECTION-->
         <section id="projects">
             <h2>My Projects</h2>
-            <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 1">
-            <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 2">
-            <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 3">
+            <div class="project">
+                <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 1">
+                <p><!--Write project description--></p>
+            </div>
+            <div class="project">
+                <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 2">
+                <p><!--Write project description--></p>
+            </div>
+            <div class="project">
+                <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 3">
+                <p><!--Write project description--></p>
+            </div>
         </section>
-        <section id="contact">
 
+        <!--CONTACT SECTION-->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact_block">
+                <p class="contact_type">Email</p>
+                <p><!--Type my email here--></p>
+            </div>
+            <div class="contact_block">
+                <p class="contact_type">LinkedIn</p>
+                <p><!--Put my LinkedIn here--></p>
+            </div>
+            <div class="contact_block">
+                <p class="contact_type">Github</p>
+                <p><!--Put my Github here--></p>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Orian Perez. All rights reserved.</p>
+    </footer>
 </body>
 </html>
