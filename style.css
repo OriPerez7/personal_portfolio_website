@@ -1,4 +1,12 @@
+body {
+    background-color: rgb(244, 244, 231);
+    margin: 0;
+}
 
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
 
 
 /* HEADER SECTION */
@@ -37,6 +45,23 @@ nav ul {
 
 main {
     padding-top: 70px;
+    margin: 0 30px;
 }
 
 /* About Me */
+
+#about {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+#skills li {
+    display: inline-flex;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+#about p {
+    margin: 20px 0;
+    line-height: 20px;
+}
