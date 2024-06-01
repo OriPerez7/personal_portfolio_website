@@ -84,7 +84,6 @@ section {
 #skills li {
     display: inline-flex;
     padding: 0 20px;
-    text-transform: uppercase;
 }
 
 #about p {
