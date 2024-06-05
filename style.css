@@ -1,115 +1,214 @@
-body {
-    background-color: rgb(244, 244, 231);
+/* Reset some default styles */
+* {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    text-transform: uppercase;
-    font-size: 1.8em;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-h3 {
-    color: rgb(191, 58, 58);
-    font-size: 1.3em;
-    font-family:'Courier New', Courier, monospace;
-    letter-spacing: 1px;
-}
-
-
-/* HEADER SECTION */
+/* Añadir estilos para el encabezado */
 
 header {
-    background-color: rgb(69, 79, 156);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 75px;
-    padding: 0px 20px;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
-h1 {
-    font-size: 2.5em;
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
 }
 
 nav ul {
-    display: flex;
-    grid-column-gap: 40px;
-    flex: 0 auto;
-    font-size: 1.2em;
-    justify-content: flex-start;
-    align-items: center;
     list-style: none;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
-.nav a {
-    color: white;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-/* MAIN SECTION */
+/* Añadir estilos para el contenido principal */
 
 main {
-    margin: 0 30px;
+    margin-top: 20px;
 }
 
 section {
-    margin: 50px 20px;
+    margin-bottom: 40px;
 }
 
-/* About Me */
-
+/* Añadir estilos para la sección "About Me" */
 #about {
-    display: block;
-    padding-left: 50px;
-}
-
-#about h3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-
-#skills {
-    border: 2px rgb(191, 58, 58) solid;
-    border-radius: 20px;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#skills li {
-    display: inline-flex;
-    padding: 0 20px;
+#about h2 {
+    margin-bottom: 20px;
 }
 
 #about p {
-    margin: 20px 0;
-    line-height: 20px;
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
 
-/* Projects */
-
-.container {
+/* Añadir estilos para la sección de habilidades */
+#skills {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Añadir estilos para la sección de proyectos */
+#projects {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .project {
-    width: 30%;
+    width: calc(33.33% - 20px); /* 33.33% para mostrar 3 proyectos por fila */
     margin-bottom: 20px;
-    text-align: left;
 }
 
 .project img {
-    width: 100%;
-    border-radius: 80px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin: 10px 0;
 }
 
 .project p {
-    border: 2px rgb(191, 58, 58) solid;
-    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Añadir estilos para la sección de contacto */
+#contact {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact form {
+    margin-bottom: 20px;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_block {
+    text-align: center;
+}
+
+.contact_block p {
+    margin-bottom: 5px;
+}
+
+.contact_type {
+    font-weight: bold;
+}
+
+/* Añadir estilos para el footer */
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    #projects {
+        padding: 20px 40px; /* Aumentar el relleno para proyectos en pantallas más grandes */
+    }
+
+    .project {
+        width: calc(33.33% - 40px); /* Redefinir el ancho de los proyectos para incluir el relleno */
+        margin-bottom: 40px; /* Aumentar el margen inferior para separar los proyectos */
+    }
 }

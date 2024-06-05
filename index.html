@@ -3,88 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Orian Perez, showcasing skills and projects in full-stack development.">
-    <meta name="author" content="Orian Perez">
-    <title>Orian Perez Portfolio</title>
+    <meta name="description" content="A portfolio website showcasing my projects and skills.">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Orian Perez</h1>
         <nav>
+            <h1>Orian Perez</h1>
             <ul>
-                <li class="nav"><a href="#about">About me</a></li>
-                <li class="nav"><a href="#projects">Projects</a></li>
-                <li class="nav"><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
-        <!--ABOUT SECTION-->
         <section id="about">
-                <h2>About Me</h2>
-                <p> <!--Info de presentación-->
-                    Hi! I'm Orian Perez, a 26yo passionate and dedicated full-stack developer based in Madrid, Spain. <br>
-                    I'm currently seeking new opportunities to start my career in web development. <br>
-                    My goal is to join a forward-thinking company where I can contribute my skills and continue to grow as a developer. <br>
-                    I am passionate about coding and always eager to learn new technologies and improve my existing skill set.
-                </p>
-                <p> <!--Info secundaria-->
-                    I discovered coding while working as a social media manager, and quickly fell in love with it. <br>
-                    This made me start studying on my own as a self-taught developer. <br>
-                    In my teenage years I studied illustration and design. Because of this, I especially like working in CSS.
-                </p>
-                <p> <!--Info extra sobre mi-->
-                    Productivity is another one of my passions, always looking for the best way to optimize my workflow and manage my time efficiently. <br>
-                    In my free time, I enjoy working out at the gym, which helps me maintain a balanced and healthy lifestyle. <br>
-                    I'm also a fan of traveling and exploring new cultures, and I love cooking and experimenting with new recipes.
-                </p> 
-                <h3>Skills</h3>
-                <div class="container">
-                    <ul id="skills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Accesibility</li>
-                        <li>Debugging</li>
-                        <li>Interactive JS</li>
-                        <li>Git</li>
-                        <li>Github</li>
-                        <li>Markdown</li>
-                    </ul>
-                </div>
-        </section>
-
-        <!--PROJECTS SECTION-->
-        <section id="projects">
-            <h2>My Projects</h2>
+            <h2>About Me</h2>
+            <p> <!--Info de presentación-->
+                Hi! I'm Orian Perez, a 26yo passionate and dedicated full-stack developer based in Madrid, Spain. <br>
+                I'm currently seeking new opportunities to start my career in web development. <br>
+                My goal is to join a forward-thinking company where I can contribute my skills and continue to grow as a developer. <br>
+                I am passionate about coding and always eager to learn new technologies and improve my existing skill set.
+            </p>
+            <p> <!--Info secundaria-->
+                I discovered coding while working as a social media manager, and quickly fell in love with it. <br>
+                This made me start studying on my own as a self-taught developer. <br>
+                In my teenage years I studied illustration and design. Because of this, I especially like working in CSS.
+            </p>
+            <p> <!--Info extra sobre mi-->
+                Productivity is another one of my passions, always looking for the best way to optimize my workflow and manage my time efficiently. <br>
+                In my free time, I enjoy working out at the gym, which helps me maintain a balanced and healthy lifestyle. <br>
+                I'm also a fan of traveling and exploring new cultures, and I love cooking and experimenting with new recipes.
+            </p> 
+            <h3>Skills</h3>
             <div class="container">
+                <ul id="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Accesibility</li>
+                    <li>Debugging</li>
+                    <li>Interactive JS</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>Markdown</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
                 <div class="project">
-                    <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 1">
-                    <h3>My portfolio</h3>
-                    <p>My first project was creating my own portfolio website. Created using HTML, CSS and Javascript.</p>
+                    <img src="resources/giant-panda-WW230176.jpg.webp" alt="Screenshot of project 1">
+                    <h3>Project 1</h3>
+                    <p>Brief description of project 1.</p>
                 </div>
                 <div class="project">
-                    <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 2">
-                    <h3>Project title</h3>
-                    <p><!--Write project description--></p>
-                </div>
-                <div class="project">
-                    <img src="resources/giant-panda-WW230176.jpg.webp" alt="project 3">
-                    <h3>Project title</h3>
-                    <p><!--Write project description--></p>
+                    <img src="resources/giant-panda-WW230176.jpg.webp" alt="Screenshot of project 2">
+                    <h3>Project 2</h3>
+                    <p>Brief description of project 2.</p>
                 </div>
             </div>
         </section>
-
-        <!--CONTACT SECTION-->
         <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="container social-media">
                 <div class="contact_block">
                     <p class="contact_type">Email</p>
-                    <p><!--Type my email here--></p>
+                    <p>mindvistainfo@gmail.com</p>
                 </div>
                 <div class="contact_block">
                     <p class="contact_type">LinkedIn</p>
@@ -98,7 +96,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Orian Perez. All rights reserved.</p>
+        <p>&copy; 2024 My Portfolio</p>
     </footer>
 </body>
 </html>
